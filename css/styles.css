@@ -24,6 +24,7 @@ body {
 }
 
 
+
 /* This adds space between paragraphs and list items*/
 /* NOTE: most Navigations use list items so you will need to */
 /* explicity set the margins on those so this rule doesn't */
@@ -50,6 +51,15 @@ h6 {
 
 /* For each of your headings at minimum set the margin, size, line-height. 
 Adjust font-weight and other properties as needed. */
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(137, 135, 134)),;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
 
 h1 {
     font-size: 5.063em;
