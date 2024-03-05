@@ -81,6 +81,13 @@ Adjust font-weight and other properties as needed. */
     
 }
 
+.nav-links ul li a{
+    color:(gray);
+    text-decoration: none;
+    font-size: 13px;
+    
+}
+
 h1 {
     font-size: 5.063em;
     line-height: 1;
