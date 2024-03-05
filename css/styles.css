@@ -55,7 +55,7 @@ Adjust font-weight and other properties as needed. */
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgb(137, 135, 134)),;
+    background-image: linear-gradient(#000000, #ffffff),;
     background-position: center;
     background-size: cover;
     position: relative;
