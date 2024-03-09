@@ -1,238 +1,308 @@
 /* Basic Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 1em;
-  }
-  
-  body, button, a {
-    font-family: 'Arial', sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #333;
-  }
-  
-  /* Typography */
-  p,
-  li {
-    margin-top: 0;
-    margin-bottom: 1em;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-weight: 500;
-    font-family: serif;
-  }
-  
-  /* Specific Heading Styles */
-  .header h1 {
-    font-size: 5.063em;
-    line-height: 1;
-    color: #fff; /* Adjust color to fit your design */
-  }
-  
-  .about h2,
-  .featured-work h2 {
-    font-weight: 500;
-    font-family: serif;
-  }
-  
-  /* Top Navigation */
-  .top-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-  }
-  
-  .left-menu button {
-    background: none;
-    border: none;
-    margin-right: 1em;
-    cursor: pointer;
-  }
-  
-  /* Header Styles */
-  .header {
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(#000000, #ffffff);
-    position: relative;
-  }
-  /* Dropdown Button */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  /* Adjust the left menu button styling */
-  .left-menu div button {
-    background: none;
-    border: none;
-    margin-right: 1em;
-    cursor: pointer;
-    color: #333; /* Adjust as needed */
-    padding: 10px 20px; /* Adjust as needed */
-    font-size: 16px; /* Adjust as needed */
-  }
-  
-  .nav {
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .nav-links {
-    flex: 1;
-    text-align: right;
-  }
-  
-  .nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-  }
-  
-  .nav-links ul li a {
-    color: #aaa; /* Adjust color to fit your design */
-    text-decoration: none;
-    font-size: 13px;
-  }
-  
-  /* Hero Section */
-  .hero-section {
-    text-align: center;
-    padding: 2em;
-    background: #eee; /* Placeholder for background image */
-  }
-  
-  .hero-section h1 {
-    margin-bottom: 0.5em;
-  }
-  
-  .hero-section p {
-    margin-bottom: 1em;
-  }
-  
-  .hero-section button {
-    background: #000;
-    color: #fff;
-    border: none;
-    padding: 0.5em 1em;
-    cursor: pointer;
-  }
-  
-  /* About Section */
-  .about {
-    padding: 2em;
-  }
-  
-  /* Featured Work Gallery */
-  .featured-work {
-    background: #ddd; /* Light grey background */
-    padding: 2em;
-  }
-  
-  .featured-work h2 {
-    margin-bottom: 1em;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1em;
+}
+
+body, button, a {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Typography */
+p,
+li {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  font-family: serif;
+}
+
+/* Specific Heading Styles */
+.header h1 {
+  font-size: 5.063em;
+  line-height: 1;
+  color: #fff; /* Adjust color to fit your design */
+}
+
+.about h2,
+.featured-work h2 {
+  font-weight: 500;
+  font-family: serif;
+}
+
+/* Top Navigation */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.left-menu button {
+  background: none;
+  border: none;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+/* Header Styles */
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(#000000, #ffffff);
+  position: relative;
+}
+/* Dropdown Button */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Adjust the left menu button styling */
+.left-menu div button {
+  background: none;
+  border: none;
+  margin-right: 1em;
+  cursor: pointer;
+  color: #333; /* Adjust as needed */
+  padding: 10px 20px; /* Adjust as needed */
+  font-size: 16px; /* Adjust as needed */
+}
+
+.nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #aaa; /* Adjust color to fit your design */
+  text-decoration: none;
+  font-size: 13px;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 2em;
+  background: #eee; /* Placeholder for background image */
+}
+
+.hero-section h1 {
+  margin-bottom: 0.5em;
+}
+
+.hero-section p {
+  margin-bottom: 1em;
+}
+
+.hero-section button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+/* About Section Enhancements */
+.about {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 2em;
+}
+
+.about-container {
+display: flex;
+justify-content: space-around; /* Adjusts spacing between text and image */
+align-items: center;
+}
+
+.about-text {
+flex-basis: 50%; /* Adjust the width as necessary */
+}
+
+.about-img img {
+max-width: 100%; /* Ensures the image is responsive */
+height: auto; /* Keeps the aspect ratio of the image */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+.about-container {
+  flex-direction: column;
+  text-align: center;
+}
+
+.about-text, .about-img {
+  flex-basis: auto;
+  width: 100%; /* Full width on smaller screens */
+}
+}
+/* Featured Work Gallery */
+.featured-work {
+  background: #ddd; /* Light grey background */
+  padding: 2em;
+}
+
+.featured-work h2 {
+  margin-bottom: 1em;
+}
+/* Featured Work Gallery Adjustments */
+.featured-work {
+  /* Ensures the section has padding and layout adjustments as needed */
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  align-items: center; /* Center cards vertically */
+  gap: 20px; /* Adjust space between cards */
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column; /* Change to row for horizontal layout */
+  gap: 20px; /* Space between cards */
+}
+
+.card {
+  background: #fff; /* Card background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow for better distinction */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  width: 300px; /* Adjust based on your needs */
+  cursor: pointer; /* Indicates the card is interactive */
+}
+
+.card-content {
+  padding: 20px; /* Padding inside the card */
+}
+
+.card-title, .card-description {
+  opacity: 0; /* Make title and description invisible by default */
+  transition: opacity 0.3s ease; /* Transition effect for hover */
+}
+
+.card:hover .card-title, .card:hover .card-description {
+  opacity: 1; /* Make title and description visible on hover */
+}
+.card-container {
+  flex-direction: row; /* This will align cards horizontally */
+  flex-wrap: wrap; /* Allows cards to wrap to the next line on smaller screens */
+  justify-content: center; /* Centers the cards horizontally */
+  gap: 20px; /* Space between cards */
+}
+
+.work-gallery {
+  display: flex;
+  justify-content: space-around;
+}
+
+.work-item {
+  width: 30%;
+  background: #fff; /* White background for each item */
+  margin-bottom: 1em;
+  padding: 1em;
+  text-align: center;
+}
+
+.work-item .work-image {
+  height: 150px; /* Fixed height for the image placeholder */
+  background: #ccc; /* Placeholder for actual images */
+  margin-bottom: 1em;
+}
+
+/* Footer Styles */
+footer .social-links {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+footer .social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.5em;
+}
+
+/* Responsive Video Embed */
+.videoWrapper {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .work-gallery {
-    display: flex;
-    justify-content: space-around;
+    flex-direction: column;
   }
-  
+
   .work-item {
-    width: 30%;
-    background: #fff; /* White background for each item */
-    margin-bottom: 1em;
-    padding: 1em;
-    text-align: center;
+    width: auto;
   }
-  
-  .work-item .work-image {
-    height: 150px; /* Fixed height for the image placeholder */
-    background: #ccc; /* Placeholder for actual images */
-    margin-bottom: 1em;
+
+  /* Adjust heading sizes for mobile */
+  .header h1 {
+    font-size: 2.5em; /* Smaller font size on mobile */
   }
-  
-  /* Footer Styles */
-  footer .social-links {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-  }
-  
-  footer .social-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 0.5em;
-  }
-  
-  /* Responsive Video Embed */
-  .videoWrapper {
-    position: relative;
-    height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  }
-  
-  .videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .work-gallery {
-      flex-direction: column;
-    }
-  
-    .work-item {
-      width: auto;
-    }
-  
-    /* Adjust heading sizes for mobile */
-    .header h1 {
-      font-size: 2.5em; /* Smaller font size on mobile */
-    }
-  }
-  
-  /* Add any additional styles that you want to combine from both snippets below... */
-  
+}
+
+/* Add any additional styles that you want to combine from both snippets below... */
