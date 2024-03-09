@@ -1,179 +1,238 @@
-/*  ==========================
-    BASE TYPOGRAPHY
-    This is added as a template to help start. 
-    You should change the fonts, font-sizes and anything else appropriate for your site.
-    ========================== */
-
-/* Optional, include a web font. @import must come before other styles. These examples are commented out */
-
-/*
-@import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i');
-@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500');
-*/
-
-/* The html and body selectors below set the base type for the entire page */
-html {
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
     font-size: 1em;
-}
-
-body {
-    font-family: sans-serif;
+  }
+  
+  body, button, a {
+    font-family: 'Arial', sans-serif;
     font-weight: 400;
     line-height: 1.5;
     color: #333;
-}
-
-
-
-/* This adds space between paragraphs and list items*/
-/* NOTE: most Navigations use list items so you will need to */
-/* explicity set the margins on those so this rule doesn't */
-/* mess up your navigation styling */
-p,
-li {
+  }
+  
+  /* Typography */
+  p,
+  li {
     margin-top: 0;
     margin-bottom: 1em;
-}
-
-
-/* Base Styling for headings.
-    You can and should modify these to fit your site*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-weight: 500;
     font-family: serif;
-}
-
-
-/* For each of your headings at minimum set the margin, size, line-height. 
-Adjust font-weight and other properties as needed. */
-
-.header{
+  }
+  
+  /* Specific Heading Styles */
+  .header h1 {
+    font-size: 5.063em;
+    line-height: 1;
+    color: #fff; /* Adjust color to fit your design */
+  }
+  
+  .about h2,
+  .featured-work h2 {
+    font-weight: 500;
+    font-family: serif;
+  }
+  
+  /* Top Navigation */
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+  
+  .left-menu button {
+    background: none;
+    border: none;
+    margin-right: 1em;
+    cursor: pointer;
+  }
+  
+  /* Header Styles */
+  .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(#000000, #ffffff),;
-    background-position: center;
-    background-size: cover;
+    background-image: linear-gradient(#000000, #ffffff);
     position: relative;
-}
-
-.nav{
+  }
+  /* Dropdown Button */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Adjust the left menu button styling */
+  .left-menu div button {
+    background: none;
+    border: none;
+    margin-right: 1em;
+    cursor: pointer;
+    color: #333; /* Adjust as needed */
+    padding: 10px 20px; /* Adjust as needed */
+    font-size: 16px; /* Adjust as needed */
+  }
+  
+  .nav {
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-}
-
-.nav-links{
+  }
+  
+  .nav-links {
     flex: 1;
     text-align: right;
-}
-
-.nav-links ul li{
+  }
+  
+  .nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
-    
-}
-
-.nav-links ul li a{
-    color:(gray);
+  }
+  
+  .nav-links ul li a {
+    color: #aaa; /* Adjust color to fit your design */
     text-decoration: none;
     font-size: 13px;
-    
-}
-
-h1 {
-    font-size: 5.063em;
-    line-height: 1;
-    margin: 0 0 0.5em 0;
-}
-
-h2 {
-    font-size: 3.375em;
-    line-height: 1.2;
-    margin: 1.5em 0 0.5em 0;
-}
-
-h3 {
-    font-size: 2.25em;
-    line-height: 1;
-    margin: 1.5em 0 0.25em 0;
-}
-
-h4 {
-    font-size: 1.5em;
-    line-height: 1;
-    margin: 1.5em 0 0.5em 0;
-    font-weight: 400;
-}
-
-h5 {
-    font-size: 1em;
-    line-height: 1;
-    margin: 1.5em 0 0.5em 0;
-    font-weight: 400;
-}
-
-h6 {
-    font-size: 1em;
-    line-height: 1.5;
-    margin: 1em 0 0 0;
-    font-weight: 400;
-    /* normal */
-    text-transform: uppercase;
-}
-
-/*  ==========================
-    BASE RESPONSIVE
-    ========================== */
-
-/* Use border-box box-sizing. This isn't strictly necessary with CSS Grid but can be helpful if you're using a float fallback and it tends to be more intuitive.*/
-
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-
-/* This is basic way to make images responsive. This means if they're larger than their container they will shrink to fit it. Not a complete solution to responsive images. */
-
-img, video {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-}
-
-/*RESPONSIVE VIDEO
-See for more info: https://codepen.io/profstein/pen/mrMLRj
-*/
-.videoWrapper{
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    text-align: center;
+    padding: 2em;
+    background: #eee; /* Placeholder for background image */
+  }
+  
+  .hero-section h1 {
+    margin-bottom: 0.5em;
+  }
+  
+  .hero-section p {
+    margin-bottom: 1em;
+  }
+  
+  .hero-section button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 2em;
+  }
+  
+  /* Featured Work Gallery */
+  .featured-work {
+    background: #ddd; /* Light grey background */
+    padding: 2em;
+  }
+  
+  .featured-work h2 {
+    margin-bottom: 1em;
+  }
+  
+  .work-gallery {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .work-item {
+    width: 30%;
+    background: #fff; /* White background for each item */
+    margin-bottom: 1em;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .work-item .work-image {
+    height: 150px; /* Fixed height for the image placeholder */
+    background: #ccc; /* Placeholder for actual images */
+    margin-bottom: 1em;
+  }
+  
+  /* Footer Styles */
+  footer .social-links {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+  }
+  
+  footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5em;
+  }
+  
+  /* Responsive Video Embed */
+  .videoWrapper {
     position: relative;
     height: 0;
-    /* padding-bottom: 75%; */ /* 4:3 aspect ratio */
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
-}
-
-.videoWrapper iframe{
+  }
+  
+  .videoWrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width:100%;
+    width: 100%;
     height: 100%;
-}
-
-
-/*  ==========================
-    YOUR STYLES
-    Add your styles below.
-    ========================== */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .work-gallery {
+      flex-direction: column;
+    }
+  
+    .work-item {
+      width: auto;
+    }
+  
+    /* Adjust heading sizes for mobile */
+    .header h1 {
+      font-size: 2.5em; /* Smaller font size on mobile */
+    }
+  }
+  
+  /* Add any additional styles that you want to combine from both snippets below... */
+  
