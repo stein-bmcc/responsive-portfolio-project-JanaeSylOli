@@ -217,10 +217,11 @@ height: auto; /* Keeps the aspect ratio of the image */
 }
 
 .card-container {
-    display: ;
+    display:flex ;
     justify-content: space-around; /* Adjusts spacing between cards */
     align-items: center;
     gap: 20px; /* Space between cards */
+    width: 70%;
 }
 
 .card {
