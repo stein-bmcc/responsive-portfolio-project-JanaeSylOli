@@ -134,17 +134,24 @@ h6 {
 
 /* Hero Section */
 .hero-section {
-  text-align: center;
-  padding: 2em;
+  text-align: left;
+  padding: 3em;
   background: #eee; /* Placeholder for background image */
+  height: 300px; 
+  line-height: 4em;
+   margin: 0.5em;
+    
+    
+    
+}
 }
 
 .hero-section h1 {
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
 }
 
 .hero-section p {
-  margin-bottom: 1em;
+  margin-bottom: .5em;
 }
 
 .hero-section button {
@@ -161,6 +168,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 2em;
+ height:300px;
 }
 
 .about-container {
@@ -209,37 +217,43 @@ height: auto; /* Keeps the aspect ratio of the image */
 }
 
 .card-container {
-  display: flex;
-  flex-direction: column; /* Change to row for horizontal layout */
-  gap: 20px; /* Space between cards */
+    display: ;
+    justify-content: space-around; /* Adjusts spacing between cards */
+    align-items: center;
+    gap: 20px; /* Space between cards */
 }
 
 .card {
-  background: #fff; /* Card background color */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow for better distinction */
-  transition: transform 0.3s ease; /* Smooth transition for hover effect */
-  width: 300px; /* Adjust based on your needs */
+    width: 30%; /* Adjust width as needed */
+    overflow: hidden; /* Ensures no overflow of content */
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow for depth */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
   height: 300px
-  cursor: pointer; /* Indicates the card is interactive */
+  
 }
 
-.card-content {
-  padding: 20px; /* Padding inside the card */
+.card-image {
+    width: 100%;
+    display: block; /* Removes bottom space/margin of img */
+}
+
+.card-info {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-info {
+    transform: translateY(0);
 }
 
 .card-title, .card-description {
-  opacity: 0; /* Make title and description invisible by default */
-  transition: opacity 0.3s ease; /* Transition effect for hover */
-}
-
-.card:hover .card-title, .card:hover .card-description {
-  opacity: 1; /* Make title and description visible on hover */
-}
-.card-container {
-  flex-direction: row; /* This will align cards horizontally */
-  flex-wrap: wrap; /* Allows cards to wrap to the next line on smaller screens */
-  justify-content: center; /* Centers the cards horizontally */
-  gap: 20px; /* Space between cards */
+    padding: 10px;
 }
 
 .work-gallery {
@@ -265,14 +279,16 @@ height: auto; /* Keeps the aspect ratio of the image */
 footer .social-links {
   background: #333;
   color: #fff;
-  text-align: center;
+  text-align: right;
   padding: 1em 0;
+  height: 200px;
 }
 
 footer .social-links a {
   color: #fff;
   text-decoration: none;
   margin: 0 0.5em;
+  
 }
 
 /* Responsive Video Embed */
