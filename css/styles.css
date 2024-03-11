@@ -225,7 +225,7 @@ height: auto; /* Keeps the aspect ratio of the image */
 }
 
 .card {
-    width: 30%; /* Adjust width as needed */
+    width: 30%; 
     overflow: hidden; /* Ensures no overflow of content */
     position: relative;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow for depth */
