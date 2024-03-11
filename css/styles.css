@@ -235,7 +235,7 @@ height: auto; /* Keeps the aspect ratio of the image */
 }
 
 .card-image {
-    width: 100%;
+    width: auto;
     display: block; /* Removes bottom space/margin of img */
 }
 
