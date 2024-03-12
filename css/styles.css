@@ -152,6 +152,7 @@ h6 {
 
 .hero-section p {
   margin-bottom: .5em;
+  flex-basis: 50%
 }
 
 .hero-section button {
