@@ -305,8 +305,8 @@ height: auto; /* Keeps the aspect ratio of the image */
 }
 
 .design-image {
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
+  width:400px;
+  height:300px;
   transition: transform 0.3s ease;
 }
 
