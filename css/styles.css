@@ -921,6 +921,32 @@ nav a {
   text-decoration: none; /* Ensures the underline doesn't reappear on hover/focus */
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+.image {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #fff;
+  border-radius: 10px;
+}
+.description {
+  margin-top: 20px;
+  max-width: 600px;
+}
+
 /* Footer Styles */
 footer .social-links {
   background: #333;
