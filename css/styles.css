@@ -898,6 +898,28 @@ nav a {
     padding: 20px; /* Less padding on mobile */
   }
 }
+.button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.next-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0078; /* Electric pink for vibrance */
+  color: #fff; /* White text color */
+  text-decoration: none; /* Removes underline from links */
+  font-weight: bold; /* Make the text bold */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.next-button:hover,
+.next-button:focus {
+  background-color: #cc0062; /* Darker pink on hover/focus for interactivity */
+  color: #fff; /* Ensures text color remains white on hover/focus */
+  text-decoration: none; /* Ensures the underline doesn't reappear on hover/focus */
+}
 
 /* Footer Styles */
 footer .social-links {
