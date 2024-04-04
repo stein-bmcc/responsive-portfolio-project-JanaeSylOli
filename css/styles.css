@@ -169,7 +169,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 2em;
- height:300px;
+
 }
 
 .about-container {
@@ -495,7 +495,6 @@ h6 {
   text-align: left;
   padding: 3em;
   background: #eee; /* Placeholder for background image */
-  height: 300px; 
   line-height: 4em;
    margin: 0.5em;
     
@@ -526,7 +525,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 2em;
- height:300px;
+ 
 }
 
 .about-container {
