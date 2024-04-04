@@ -898,14 +898,16 @@ nav a {
     padding: 20px; /* Less padding on mobile */
   }
 }
-.button-container {
+.navigation-buttons {
   text-align: center;
   margin-top: 30px;
 }
 
+.back-button,
 .next-button {
   display: inline-block;
   padding: 10px 20px;
+  margin: 0 10px; /* Adds space between the buttons */
   background-color: #ff0078; /* Electric pink for vibrance */
   color: #fff; /* White text color */
   text-decoration: none; /* Removes underline from links */
@@ -914,6 +916,8 @@ nav a {
   transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
+.back-button:hover,
+.back-button:focus,
 .next-button:hover,
 .next-button:focus {
   background-color: #cc0062; /* Darker pink on hover/focus for interactivity */
