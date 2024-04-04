@@ -607,8 +607,14 @@ height: auto; /* Keeps the aspect ratio of the image */
     transition: transform 0.3s ease;
 }
 
-.card:hover .card-info {
-    transform: translateY(0);
+.card-link {
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Inherits text color from parent elements */
+  display: block; /* Allows the link to contain block elements */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scales the card for a hover effect */
 }
 
 .card-title, .card-description {
