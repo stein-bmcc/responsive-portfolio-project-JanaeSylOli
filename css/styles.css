@@ -209,17 +209,27 @@ height: auto; /* Keeps the aspect ratio of the image */
 
 .design-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns grid */
+  grid-template-columns: 1fr; /* Single column grid for mobile */
   gap: 2rem; /* Space between grid items */
   
 }
+@media (min-width: 768px) {
+  .design-grid {
+    grid-template-columns: repeat(2, 1fr); /* 3 columns grid */
+  }
+}
+@media (min-width: 1000px) {
+  .design-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns grid */
+  }
+}
 
-.design-item {
+/* .design-item {
   position: center;
   
    width:300px;
   height:300px;
-}
+} */
 
 .design-link {
   display: block;
@@ -258,11 +268,7 @@ height: auto; /* Keeps the aspect ratio of the image */
   transform: scale(1.05); /* Optional scale effect on hover */
 }
 
-@media (max-width: 768px) {
-  .design-grid {
-    grid-template-columns: 1fr; /* Single column grid for mobile */
-  }
-}
+
 .work-gallery {
   display: flex;
   justify-content: space-around;
@@ -510,10 +516,13 @@ height: auto; /* Keeps the aspect ratio of the image */
 }
 
 .card-container {
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
   justify-content: center; /* Centers cards in the container */
   gap: 20px; /* Space between cards */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  
 }
 
 .card {
@@ -952,3 +961,9 @@ footer .social-links a {
 }
 
 /* Add any additional styles that you want to combine from both snippets below... */
+
+/* THis constrains all main elements to be no wider than 1250px and centers the content on the page */
+main{
+  max-width: 1250px;
+  margin: 0 auto;
+}
